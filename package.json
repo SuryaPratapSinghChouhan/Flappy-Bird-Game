@@ -1,0 +1,24 @@
+{
+  "name": "company-portfolio",
+  "version": "1.0.0",
+  "description": "Modern company portfolio with Tailwind CSS",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npm run build:css && npm run watch:css",
+    "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npm run build:css"
+  },
+  "keywords": [
+    "portfolio",
+    "tailwind",
+    "company"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.33"
+  }
+}
